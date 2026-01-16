@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 min-h-screen flex items-center justify-center">
+
+  <div class="bg-white p-6 rounded-lg shadow-md w-80 space-y-3">
+    <h1 class="text-xl font-bold text-center">Expense Tracker</h1>
+    <p id="balance" class="text-center font-bold text-lg">
+  Balance: 0
+</p>
+<p id="income" class="text-green-600 font-semibold text-center">
+  Income: 0
+</p>
+
+<p id="expense" class="text-red-500 font-semibold text-center">
+  Expense: 0
+</p>
+
+
+
+    <input id="amountInput" type="number" placeholder="Enter amount" 
+      class="w-full border px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" />
+
+    <select
+  id="typeSelect"
+  class="w-full border px-3 py-2 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+>
+  <option value="income">Income</option>
+  <option value="expense">Expense</option>
+</select>
+
+
+    <button
+      id="addBtn"
+      class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+    >
+      Add
+    </button>
+    <ul id="history" class="mt-4 space-y-2"></ul>
+
+
+    <p id="output" class="text-center font-semibold"></p>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
